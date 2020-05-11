@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="1dp"
+    android:background="#9EC3A0"
+    android:paddingTop="4dp"
+    android:paddingBottom="4dp">
+
+    <com.beardedhen.androidbootstrap.BootstrapCircleThumbnail
+        android:id="@+id/listfriend_item_avt"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:src="@drawable/logo"
+        app:bootstrapBrand="primary"
+        app:bootstrapSize="xs"
+        app:hasBorder="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/listfriend_item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="3dp"
+        android:text="TextView"
+        android:textColor="@color/bootstrap_brand_secondary_text"
+        android:textSize="22sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toEndOf="@+id/listfriend_item_avt"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/listfriend_item_fistmess"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="4dp"
+        android:text="TextView"
+        android:textSize="17sp"
+        app:layout_constraintStart_toEndOf="@+id/listfriend_item_avt"
+        app:layout_constraintTop_toBottomOf="@+id/listfriend_item_name" />
+
+    <com.beardedhen.androidbootstrap.BootstrapButton
+        android:id="@+id/listfriend_item_menumess"
+        android:layout_width="24dp"
+        android:layout_height="6dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="16dp"
+        android:text="a"
+        app:bootstrapBrand="secondary"
+        app:bootstrapSize="xl"
+        app:fontAwesomeIcon="fa_delicious"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:roundedCorners="true"
+        app:showOutline="false" />
+
+    <com.beardedhen.androidbootstrap.BootstrapButton
+        android:id="@+id/adt_listfriend_item_btnonline"
+        android:layout_width="5dp"
+        android:layout_height="6dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="26dp"
+        android:width="10dp"
+        android:height="10dp"
+        android:clickable="false"
+        android:text="a"
+        app:bootstrapBrand="primary"
+        app:bootstrapSize="xl"
+        app:buttonMode="regular"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@+id/listfriend_item_menumess"
+        app:roundedCorners="true"
+        app:showOutline="true" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">flrv-ch</string>
+    <array name="dropdownitem">
+        <item>a</item>
+        <item>a</item>
+        <item>a</item>
+        <item>a</item>
+    </array>
+</resources>

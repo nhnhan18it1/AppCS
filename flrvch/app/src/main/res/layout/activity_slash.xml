@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mhd"
+    tools:context=".splashActivity">
+
+    <com.beardedhen.androidbootstrap.BootstrapProgressBar
+        android:id="@+id/splash_progress"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="552dp"
+        app:animated="true"
+        app:bootstrapBrand="success"
+        app:bootstrapProgress="78"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:striped="true" />
+
+    <TextView
+        android:id="@+id/txtloading"
+        android:layout_width="106dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="172dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="180dp"
+        android:layout_marginBottom="87dp"
+        android:text="loading..."
+        android:textColor="@color/bootstrap_brand_secondary_fill"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.425"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/splash_progress"
+        app:layout_constraintVertical_bias="0.25" />
+
+    <ImageView
+        android:id="@+id/imgcheck"
+        android:layout_width="175dp"
+        android:layout_height="175dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="209dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ac11" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

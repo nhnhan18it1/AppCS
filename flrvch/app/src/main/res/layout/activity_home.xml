@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    android:id="@+id/home_drawermain"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#BAC9C9C9"
+        >
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:weightSum="12"
+            android:gravity="start"
+            app:layout_constraintTop_toTopOf="parent">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2">
+                <com.beardedhen.androidbootstrap.BootstrapCircleThumbnail
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_weight="4"
+                    android:src="@drawable/logo"
+                    app:bootstrapBrand="success"
+                    app:hasBorder="true"
+                    tools:layout_editor_absoluteX="16dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="end"
+                android:gravity="end"
+                android:layout_weight="10"
+                android:weightSum="12">
+
+                <com.beardedhen.androidbootstrap.BootstrapButton
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:layout_weight="2"
+                    android:text="a"
+                    app:bootstrapBrand="primary"
+                    app:bootstrapSize="md"
+                    app:buttonMode="regular"
+                    app:fontAwesomeIcon="fa_search"
+                    app:roundedCorners="true"
+                    app:showOutline="true"
+                    tools:layout_editor_absoluteX="264dp"
+                    tools:layout_editor_absoluteY="9dp" />
+
+                <com.beardedhen.androidbootstrap.BootstrapButton
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_weight="2"
+                    android:text="a"
+                    app:bootstrapBrand="primary"
+                    app:buttonMode="regular"
+                    app:fontAwesomeIcon="fa_facebook_official"
+                    app:roundedCorners="true"
+                    app:showOutline="true" />
+
+                <com.beardedhen.androidbootstrap.BootstrapButton
+                    android:id="@+id/home_btnmess"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginStart="1dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginEnd="1dp"
+                    android:layout_weight="2"
+                    android:text="a"
+                    app:bootstrapBrand="primary"
+                    app:bootstrapText="{fa_comments}"
+                    app:buttonMode="regular"
+                    app:fontAwesomeIcon="fa_comments"
+                    app:roundedCorners="true"
+                    app:showOutline="true" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="0dp"
+            android:layout_height="636dp"
+            android:layout_marginTop="1dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="#C40378AE"
+                    android:weightSum="12">
+
+                    <com.beardedhen.androidbootstrap.BootstrapCircleThumbnail
+                        android:id="@+id/home_avtfix"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_weight="2"
+                        android:src="@drawable/ac11"
+                        app:bootstrapBrand="success"
+                        app:bootstrapSize="sm"
+                        app:hasBorder="false"
+                        app:layout_constraintEnd_toStartOf="@+id/textView5"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <com.beardedhen.androidbootstrap.BootstrapEditText
+                        android:id="@+id/home_inputtus"
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="10"
+                        android:editable="false"
+                        android:hint="Bạn đang nghĩ gì?"
+                        app:bootstrapBrand="info"
+                        app:bootstrapSize="md"
+                        app:roundedCorners="true" />
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/home_rcyv_news"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="0dp" />
+
+            </LinearLayout>
+        </ScrollView>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:background="#FFFDFD"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:weightSum="10">
+
+                    <com.beardedhen.androidbootstrap.BootstrapButton
+                        android:id="@+id/avtHome_btnHome"
+                        android:layout_width="72dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:text="a"
+                        android:textColor="@color/bootstrap_brand_primary"
+                        app:bootstrapBrand="secondary"
+                        app:bootstrapSize="xl"
+                        app:chainUseRtl="true"
+                        app:fontAwesomeIcon="fa_home"
+                        app:roundedCorners="true"
+                        app:showOutline="false" />
+
+                    <com.beardedhen.androidbootstrap.BootstrapButton
+                        android:id="@+id/bootstrapButton3"
+                        android:layout_width="72dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:text="a"
+                        android:textSize="25sp"
+                        app:bootstrapBrand="secondary"
+                        app:bootstrapSize="xl"
+                        app:chainUseRtl="true"
+                        app:fontAwesomeIcon="fa_cc_paypal"
+                        app:roundedCorners="false"
+                        app:showOutline="false" />
+
+                    <com.beardedhen.androidbootstrap.BootstrapButton
+                        android:id="@+id/bootstrapButton2"
+                        android:layout_width="72dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:text="a"
+                        android:textSize="25sp"
+                        app:bootstrapBrand="secondary"
+                        app:bootstrapSize="xl"
+                        app:chainUseRtl="true"
+                        app:fontAwesomeIcon="fa_cc_paypal"
+                        app:roundedCorners="false"
+                        app:showOutline="false" />
+
+                    <com.beardedhen.androidbootstrap.BootstrapButton
+                        android:id="@+id/bootstrapButton4"
+                        android:layout_width="72dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:text="a"
+                        android:textSize="25sp"
+                        app:bootstrapBrand="secondary"
+                        app:bootstrapSize="xl"
+                        app:chainUseRtl="true"
+                        app:fontAwesomeIcon="fa_cc_paypal"
+                        app:roundedCorners="false"
+                        app:showOutline="false" />
+
+                    <com.beardedhen.androidbootstrap.BootstrapButton
+                        android:id="@+id/bootstrapButton5"
+                        android:layout_width="72dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:text="a"
+                        android:textSize="25sp"
+                        app:bootstrapBrand="secondary"
+                        app:bootstrapSize="xl"
+                        app:chainUseRtl="true"
+                        app:fontAwesomeIcon="fa_bars"
+                        app:roundedCorners="false"
+                        app:showOutline="false" />
+                </TableRow>
+
+            </TableLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="700dp"
+        android:layout_marginTop="106dp"
+        android:background="@color/bootstrap_brand_secondary_text"
+        android:gravity="top"
+        android:layout_gravity="center"
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/home_list_cmt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <LinearLayout
+                android:id="@+id/inpcmt"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/customtxt1"
+                android:gravity="center"
+                android:orientation="horizontal"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/home_list_cmt">
+
+                <com.beardedhen.androidbootstrap.BootstrapEditText
+                    android:id="@+id/home_adt_ipcmt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="Ðánh giá c?a b?n"
+                    app:bootstrapBrand="success"
+                    app:bootstrapSize="sm"
+                    app:roundedCorners="true">
+
+                </com.beardedhen.androidbootstrap.BootstrapEditText>
+
+                <com.beardedhen.androidbootstrap.BootstrapButton
+                    android:id="@+id/home_adt_sendcmt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="hrllo"
+                    app:bootstrapBrand="success"
+                    app:bootstrapSize="md"
+                    app:buttonMode="regular"
+                    app:fontAwesomeIcon="fa_send"
+                    app:roundedCorners="true"
+                    app:showOutline="true" />
+
+
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </RelativeLayout>
+</androidx.drawerlayout.widget.DrawerLayout>

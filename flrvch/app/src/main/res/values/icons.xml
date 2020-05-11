@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="comment_alt">&#xf27a;</string>
+    <string name="thumbs_up">&#xf164;</string>
+    <string name="share_square">&#xf14d;</string>
+
+</resources>
