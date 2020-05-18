@@ -18,9 +18,9 @@
     <LinearLayout
         android:id="@+id/constraintLayout2"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
         android:background="#6F37D3"
-        android:weightSum="13"
+        android:weightSum="14"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -28,9 +28,9 @@
         <com.beardedhen.androidbootstrap.BootstrapCircleThumbnail
             android:id="@+id/lisf_AvtOnAcc"
             android:layout_width="0dp"
-            android:layout_height="41dp"
+            android:layout_height="30dp"
             android:layout_marginStart="3dp"
-
+            android:layout_gravity="center"
             android:layout_marginTop="2dp"
             android:layout_weight="2"
             android:src="@drawable/logo"
@@ -41,10 +41,11 @@
         <com.beardedhen.androidbootstrap.BootstrapEditText
             android:id="@+id/bootstrapEditText"
             android:layout_width="0dp"
-            android:layout_height="35dp"
+            android:layout_height="30dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="2dp"
-            android:layout_weight="9"
+            android:layout_weight="10"
+            android:layout_gravity="center"
             android:hint="Tìm kiếm bạn bè"
             app:bootstrapBrand="info"
             app:bootstrapSize="md"
@@ -52,17 +53,17 @@
             app:roundedCorners="true" />
 
         <com.beardedhen.androidbootstrap.BootstrapButton
-            android:layout_width="9dp"
-            android:layout_height="40dp"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
             android:layout_marginLeft="12dp"
-            android:layout_marginTop="4dp"
+            android:layout_marginTop="1dp"
             android:layout_weight="2"
-
+            android:layout_gravity="center"
             android:text="a"
             app:bootstrapBrand="info"
             app:bootstrapSize="md"
             app:buttonMode="regular"
-            app:fontAwesomeIcon="fa_search"
+            app:bootstrapText="{fa_search}"
 
             app:roundedCorners="true"
             app:showOutline="true" />

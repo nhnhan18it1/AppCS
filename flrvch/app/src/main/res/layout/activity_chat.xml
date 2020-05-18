@@ -37,7 +37,8 @@
             android:src="@drawable/icons_search"
             app:bootstrapBrand="secondary"
             app:bootstrapSize="xl"
-            app:hasBorder="false" />
+            app:hasBorder="false"
+            />
 
         <TextView
             android:id="@+id/chatAc_Name"
@@ -48,6 +49,8 @@
             android:textSize="18sp"
             android:paddingStart="4dp"
             android:textStyle="bold"
+            android:background="@color/bootstrap_thumbnail_background"
+
             />
 
         <com.beardedhen.androidbootstrap.BootstrapButton

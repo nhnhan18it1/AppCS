@@ -7,27 +7,22 @@
     android:layout_height="wrap_content"
     android:weightSum="12"
     android:layout_marginTop="5dp"
-    android:id="@+id/adt_chat_container"
+    android:id="@+id/adt_chat_container2"
+    android:gravity="end"
     >
-    <com.beardedhen.androidbootstrap.BootstrapCircleThumbnail
-        android:id="@+id/adt_chat_avt"
-        android:layout_weight="3"
-        android:layout_width="0dp"
-        android:layout_height="40dp"
-        app:hasBorder="false"
-        app:bootstrapSize="lg"
-        android:src="@drawable/logo"
-        />
+
     <com.beardedhen.androidbootstrap.BootstrapLabel
-        android:id="@+id/adt_chat_lblCt"
+        android:id="@+id/adt_chat_lblCt2"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_gravity="start"
+        android:layout_gravity="end"
         android:layout_marginTop="2dp"
         android:layout_weight="9"
+        android:gravity="end"
+
         android:paddingStart="4dp"
-        android:gravity="left"
         android:text="Bootstrap Label"
+
         app:bootstrapBrand="info"
         app:bootstrapHeading="h4"
         app:roundedCorners="true" />
